@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/explore_style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Explore Books</title>
+</head>
+<body>
+    <div class="header">
+        <p id="header-title">Alexandria.</p>   
+        <div id="search">
+            <input type="text" id="searchInput" placeholder="Enter your search query...">
+            <button onclick="explore_search()">Search</button>
+        </div>
+        <p id="header-name">P00sh</p>
+    </div>
+    <div id="explore-container"></div>
+
+    <!-- Modal for book details -->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalAuthor"></p>
+            <p id="modalGenre"></p>
+            <p id="modalDescription"></p>
+            <p id="modalRating"></p>
+    
+            <!-- Similar Books -->
+            <div id="similarBooksContainer">
+                <div id="col-modal-0" class="col-modal"></div>
+                <div id="col-modal-1" class="col-modal"></div>
+                <div id="col-modal-2" class="col-modal"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="{{ url_for('static', filename='js/explore_script.js') }}"></script>
+</body>
+</html>

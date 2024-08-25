@@ -1,0 +1,7 @@
+flask
+pandas
+numpy
+cohere
+annoy
+python-dotenv
+umap-learn
