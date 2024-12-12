@@ -16,7 +16,8 @@ function search() {
 
         // Distribute books among columns
         data.forEach((book, index) => {
-            console.log(book)
+            console.log(index)
+
             const columnIndex = index % 5;
             const bookCard = `
                 <div class="book-card">
