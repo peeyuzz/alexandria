@@ -28,7 +28,7 @@ rough.ipynb      # Notebook for experiments
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/alexandria.git
+   git clone https://github.com/peeyuzz/alexandria.git
    cd alexandria
    ```
 
